@@ -1,0 +1,9 @@
+[1130/144703.179:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1130/144703.210:ERROR:exception_snapshot_win.cc(98)] thread ID 5768 not found in process
