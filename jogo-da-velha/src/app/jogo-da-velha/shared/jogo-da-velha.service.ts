@@ -54,6 +54,10 @@ export class JogoDaVelhaService {
     return this._jogador;
   }
 
+  get jogador(): number {
+    return this._jogador;
+  }
+
   // qdo o botão "iniciar o jogo" é acionado
   iniciarJogo(): void {
     this._showInicio = false;
