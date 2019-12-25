@@ -65,26 +65,29 @@ export class JogoDaVelhaService {
   }
 
   jogar(posX: number, posY: number): void {
-    if(this.tabuleiro[posX][posY] !== this.VAZIO || this.vitoria) {
+    // jogada inválida
+    if (this.tabuleiro[posX][posY] !== this.VAZIO || 
+      this.vitoria) {
       return;
     }
 
     this.tabuleiro[posX][posY] = this._jogador;
     this.numMovimentos++;
-    // verifica se o jogo acabou...
-    this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this._jogador);
-    // Faz a inversão do jogador
+    this.vitoria = this.fimJogo(posX, posY, 
+      this.tabuleiro, this._jogador);
     this._jogador = (this._jogador === this.X) ? this.O : this.X;
 
-    if(!this.vitoria && this.numMovimentos < 9) {
-       this.cpuJogar();
+    if (!this.vitoria && this.numMovimentos < 9) {
+      this.cpuJogar();
     }
 
-    if(this.vitoria !== false) {
+    // houve vitória
+    if (this.vitoria !== false) {
       this._showFinal = true;
     }
 
-    if(!this.vitoria && this.numMovimentos === 9) {
+    // empate
+    if (!this.vitoria && this.numMovimentos === 9) {
       this._jogador = 0;
       this._showFinal = true;
     }
