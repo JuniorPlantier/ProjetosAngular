@@ -55,4 +55,14 @@ export class JogoDaVelhaComponent implements OnInit {
     return this.jogoDaVelhaService.exibirVitoria(posX, posY);
  }
 
+ // qual jogador corrente, para verificar se ele venceu ou não.
+ get jogador(): number {
+   return this.jogoDaVelhaService.jogador;
+ }
+
+ // Inicia um novo jogo
+ novoJogo(): void {
+   this.jogoDaVelhaService.novoJogo();
+ }
+
 }
